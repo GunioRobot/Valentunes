@@ -50,7 +50,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 		var song_title:String;
 		var menu:ContextMenu;
 	//-
-	
+
 	//default values
 	private var DEFAULT_SKIN_LOAD_TIMEOUT = 10; //seconds
 	private var DEFAULT_SONG_LOAD_TIMEOUT = 30; //seconds
@@ -71,7 +71,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 */
 	//-
 	private var music_player: MusicPlayer;		//0
-	
+
 	//private vars
 	private var _skin_timeout_error:Boolean;
 	private var _last_position:Number;
@@ -101,13 +101,13 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 			first_track = 0;
 		}else{
 			first_track -=  1;
-		} 
+		}
 		if(!skin_load_timeout) skin_load_timeout = DEFAULT_SKIN_LOAD_TIMEOUT;
 		if(!song_load_timeout) song_load_timeout = DEFAULT_SONG_LOAD_TIMEOUT;
 		alert("song_url="+song_url)
 		_skin_timeout_error = false;
 		loadDefaultSkin();
-		
+
 		//#Flash7
 		//+
 			//customized menu
@@ -162,10 +162,10 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 			open_menu_btn["owner"] = this;
 			open_menu_btn.onPress = openMenuPressed;
 			open_menu_btn.onRollOver = openMenuOver;
-*/			
+*/
 		//-
 		setColors()
-		loadPlaylist()		
+		loadPlaylist()
 	}
 
 	//#FoldMenu
@@ -190,7 +190,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 		}
 */
 	//-
-	
+
 	function setColors(){
 		alert("setColors()")
 		var buttons_ar = [load_skin_mc,play_skin_mc,stop_skin_mc,error_skin_mc]
@@ -209,7 +209,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 			}else{
 				if(b_fgcolor.length>0){
 					var bcolor = new Color(buttons_ar[i])
-					bcolor.setRGB(Number("0x"+b_fgcolor))					
+					bcolor.setRGB(Number("0x"+b_fgcolor))
 				}
 			}
 		}
@@ -284,7 +284,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 			_playlist.loadXSPFPlaylist(playlist_url)
 		}
 	}
-	
+
 	function playTrack(){
 		alert("play track ")
 		_last_position = -1;
@@ -334,7 +334,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 			//-
 			playTrack();
 		}else{
-			alert("fim")			
+			alert("fim")
 			if(repeat.toString()=="true"){
 				_playlist.current_track = 0;
 				if(shuffle.toString()=="true"){
@@ -418,7 +418,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 							if (remaining > 20000){
 								//nada
 							}else {
-								_root.teste_mc.play();	
+								_root.teste_mc.play();
 							}
 							stopTrack();
 						}
@@ -461,7 +461,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 		}
 		_last_position = music_player.music_position;
 	}
-	
+
 	function loadDefaultSkin(){
 		//default background
 		this.attachMovie("default_b_bg","bg_skin_mc",2)
@@ -518,7 +518,7 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 			isloadloaded = true;
 		}
 		alert("a"+isloadloaded+" "+load_skin_mc.getBytesLoaded())
-		
+
 		if((play_skin_mc.getBytesLoaded()>0)&&((play_skin_mc.getBytesLoaded()/play_skin_mc.getBytesTotal())==1)){
 			isplayloaded = true;
 			play_skin_mc._visible = false;
@@ -552,6 +552,6 @@ class com.zuardi.musicplayer.MusicButton extends MovieClip
 	}
 	//FOR DEBUG
 	function alert(p_msg){
-		trace("#my trace# "+p_msg)	
+		trace("#my trace# "+p_msg)
 	}
 }

@@ -12,7 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 */
 
 class com.zuardi.musicplayer.Playlist{
-	
+
 	//public vars
 	var tracks:Array;
 	var playlist_size:Number;
@@ -21,11 +21,11 @@ class com.zuardi.musicplayer.Playlist{
 	var play_order_table:Array;
 	//interface
 	var onPlaylistLoaded:Function;
-	
+
 	//private vars
 	private var _xspf:XML;
 	private var _delay_interval:Object;
-	
+
 	//constructor
 	function Playlist(Void)
 	{
@@ -88,7 +88,7 @@ class com.zuardi.musicplayer.Playlist{
 			trace("single mode = "+p_url)
 			_xspf.parseXML(p_url);
 			//half second delay
-			_delay_interval = setInterval(function(p_xspf,p_target){ 
+			_delay_interval = setInterval(function(p_xspf,p_target){
 				trace("DELAY")
 				p_xspf.onLoad(true);
 				clearInterval(p_target._delay_interval)
@@ -121,7 +121,7 @@ class com.zuardi.musicplayer.Playlist{
 		trace("normalOrderTable() play_order_table[0]"+play_order_table[0])
 	}
 	function alert(p_msg){
-		trace(p_msg)	
+		trace(p_msg)
 	}
 
 }

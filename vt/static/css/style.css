@@ -37,7 +37,7 @@ input.btn {
 	border-color: Black;
 }
 .even {
-  
+
       -moz-box-shadow: inset 0px 0px 14px #FC9D9A; /* FF3.5+ */
   -webkit-box-shadow: inset 0px 0px 14px #FC9D9A; /* Saf3.0+, Chrome */
           box-shadow: inset 0px 0px 14px #FC9D9A; /* Opera 10.5, IE9 */
@@ -58,18 +58,18 @@ display:inline;
       -moz-box-shadow: inset 0px 0px 14px #FE4365; /* FF3.5+ */
   -webkit-box-shadow: inset 0px 0px 14px #FE4365; /* Saf3.0+, Chrome */
           box-shadow: inset 0px 0px 14px #FE4365; /* Opera 10.5, IE9 */
-  
+
      -moz-border-radius: 14px; /* FF1+ */
   -webkit-border-radius: 14px; /* Saf3-4 */
           border-radius: 14px; /* Opera 10.5, IE9, Saf5, Chrome */
   padding:10px;
 }
 .player {
- 
+
       -moz-box-shadow: 0px 0px 6px #FFF; /* FF3.5+ */
   -webkit-box-shadow: 0px 0px 6px #FFF; /* Saf3.0+, Chrome */
           box-shadow: 0px 0px 6px #fff; /* Opera 10.5, IE9 */
-  
+
      -moz-border-radius: 4px; /* FF1+ */
   -webkit-border-radius: 4px; /* Saf3-4 */
           border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome */
@@ -124,9 +124,9 @@ label:after { content: ":" }
 	font-size:16px;
 	text-indent:10px;
   }
-    
+
   img { border-style: none; }
-    
+
   @font-face {
 	font-family: 'MyUnderwoodRegular';
 	src: url('../fonts/MyUnderwood-webfont.eot');
@@ -134,14 +134,14 @@ label:after { content: ":" }
 	font-weight: normal;
 	font-style: normal;
   }
-  
+
   @font-face {
 	font-family: 'CutiePop';
 	src: local('☺'), url('../fonts/CutiePop.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
   }
-  
+
   @font-face {
 	font-family: 'Impact_Label';
 	src: local('☺'), url('../fonts/Impact_Label.ttf') format('truetype');

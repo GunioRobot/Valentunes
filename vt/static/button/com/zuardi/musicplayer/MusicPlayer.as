@@ -12,11 +12,11 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 */
 class com.zuardi.musicplayer.MusicPlayer extends MovieClip
 {
-	
+
 	//interface
 	var onMusicLoaded:Function;
 	var onMusicEnd:Function;
-	
+
 	private var _main_sound:Sound;
 	private var _sound_container_mc:MovieClip;//0;
 
@@ -27,7 +27,7 @@ class com.zuardi.musicplayer.MusicPlayer extends MovieClip
 	}
 
 	//public methods
-	
+
 	//loads a mp3 sound, call onMusicLoaded(success) when finish the download or when an error occurs
 	function loadMusic(p_music_url:String,p_buffer:Boolean)
 	{
@@ -62,7 +62,7 @@ class com.zuardi.musicplayer.MusicPlayer extends MovieClip
 			//</workaround>
 			this["owner"].onMusicEnd()
 		}
-		_main_sound.loadSound(p_music_url,p_buffer);		
+		_main_sound.loadSound(p_music_url,p_buffer);
 	}
 
 	//start playing the music, calls onMusicEnd when the music reaches the end
@@ -110,9 +110,9 @@ class com.zuardi.musicplayer.MusicPlayer extends MovieClip
 	{
 		return _main_sound.duration;
 	}
-	
+
 	function alert(p_msg){
-		trace(p_msg)	
+		trace(p_msg)
 	}
-	
+
 }

@@ -39,14 +39,14 @@ class Main extends MovieClip{
 			button_properties.b_load_color = bcolors_ar[0]
 			button_properties.b_play_color = bcolors_ar[1]
 			button_properties.b_stop_color = bcolors_ar[2]
-			button_properties.b_error_color = bcolors_ar[3]			
+			button_properties.b_error_color = bcolors_ar[3]
 		}
 		if(_root.buttons!=undefined){
 			var buttons_ar:Array = _root.buttons.split(",")
 			button_properties.b_load = buttons_ar[0]
 			button_properties.b_play = buttons_ar[1]
 			button_properties.b_stop = buttons_ar[2]
-			button_properties.b_error = buttons_ar[3]			
+			button_properties.b_error = buttons_ar[3]
 		}
 		Stage.scaleMode = "noscale"
 		Stage.align = "LT"

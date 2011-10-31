@@ -45,7 +45,7 @@ class com.zuardi.musicplayer.ProgressiveSlider extends MovieClip
 		var percent = (this._xmouse/this._width)*100
 		level = percent;
 	}
-	
+
 	function set off_color(p_color:String){
 		var bg_color = new Color(bg_mc)
 		bg_color.setRGB(Number("0x"+p_color))
@@ -57,10 +57,10 @@ class com.zuardi.musicplayer.ProgressiveSlider extends MovieClip
 	function set level(p_percent:Number){
 		if(p_percent>100)p_percent=100;
 		if(p_percent<0)p_percent=0;
-		level_bar_mc._xscale = p_percent		
+		level_bar_mc._xscale = p_percent
   		var eventObj:Object={target:this,type:"change"}
   		eventObj.level = p_percent;
   		dispatchEvent(eventObj);
 	}
-	
+
 }
